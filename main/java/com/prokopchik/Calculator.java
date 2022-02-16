@@ -8,11 +8,12 @@ public class Calculator {
 
         view.showFalseOrTrue(logic.sumFirstAndlLastTwo(input.consoleInputOneParameter()));
 
-        input.consoleInputThreeParameters();
-        view.showFormula(logic.calculateFormula(input.b,input.c,input.d));
+        view.showFormula(logic.calculateFormula(input.consoleInputThreeParameters(),
+                input.consoleInputThreeParameters(), input.consoleInputThreeParameters()));
 
-        input.consoleInputTwoParameters();
-        view.showPerimeter(logic.calculatePerimeter(input.b,input.c));
-        view.showSquare(logic.calculateSquare(input.b,input.c));
+        double kateta = input.consoleInputTwoParameters();
+        double katetb = input.consoleInputTwoParameters();
+        view.showPerimeter(logic.calculatePerimeter(kateta, katetb));
+        view.showSquare(logic.calculateSquare(kateta, katetb));
     }
 }

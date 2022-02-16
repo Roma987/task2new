@@ -4,10 +4,6 @@ import java.util.Scanner;
 
 public class Input {
 
-    double b;
-    double c;
-    double d;
-
     public int consoleInputOneParameter() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("введите четырехзначное число ");
@@ -18,41 +14,23 @@ public class Input {
         return scanner.nextInt();
     }
 
-    public void consoleInputTwoParameters() {
+    public double consoleInputTwoParameters() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("введите катет а ");
+        System.out.println("введите катет  ");
         while (!scanner.hasNextDouble()) {
             scanner.nextLine();
             System.out.print("Неверный ввод. Введите число ");
         }
-        d = scanner.nextDouble();
-        System.out.println("введите катет b ");
-        while (!scanner.hasNextDouble()) {
-            scanner.nextLine();
-            System.out.print("Неверный ввод. Введите число ");
-        }
-        c = scanner.nextDouble();
+        return scanner.nextDouble();
     }
 
-    public void consoleInputThreeParameters() {
+    public double consoleInputThreeParameters() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("введите первое число ");
-        while (!scanner.hasNextDouble()) {
+        System.out.println("введите число ");
+        while (!scanner.hasNextInt()) {
             scanner.nextLine();
             System.out.print("Неверный ввод. Введите число ");
         }
-        b = scanner.nextDouble();
-        System.out.println("введите второе число ");
-        while (!scanner.hasNextDouble()) {
-            scanner.nextLine();
-            System.out.print("Неверный ввод. Введите число ");
-        }
-        c = scanner.nextDouble();
-        System.out.println("введите третье число ");
-        while (!scanner.hasNextDouble()) {
-            scanner.nextLine();
-            System.out.print("Неверный ввод. Введите число ");
-        }
-        d = scanner.nextDouble();
+        return scanner.nextDouble();
     }
 }

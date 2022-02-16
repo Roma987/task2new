@@ -8,8 +8,8 @@ public class View {
     public void showFormula(double result) {
         System.out.println("Результат формулы равен " + result + "\n");
     }
-
     public void showPerimeter(double result) {
+
         System.out.println("Периметр равен " + result + "\n");
     }
 

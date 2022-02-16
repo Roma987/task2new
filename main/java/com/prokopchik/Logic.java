@@ -30,7 +30,7 @@ public class Logic {
         return numberone + numbertwo + c;
     }
 
-    public  double calculateSquare(double numberone, double numbertwo) {
+    public double calculateSquare(double numberone, double numbertwo) {
         return (numberone * numbertwo) / 2;
     }
 }
