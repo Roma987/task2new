@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Input {
 
     public int consoleInputOneParameter() {
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         System.out.println("введите четырехзначное число ");
         while (!scanner.hasNextInt()) {
@@ -15,6 +16,7 @@ public class Input {
     }
 
     public double consoleInputTwoParameters() {
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         System.out.println("введите катет  ");
         while (!scanner.hasNextDouble()) {
@@ -25,6 +27,7 @@ public class Input {
     }
 
     public double consoleInputThreeParameters() {
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         System.out.println("введите число ");
         while (!scanner.hasNextInt()) {
